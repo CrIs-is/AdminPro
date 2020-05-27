@@ -7,6 +7,7 @@ import { APP_ROUTES } from './app.routes';
 import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
 
 
 //Rutas
@@ -15,14 +16,13 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-
-   
+    RegisterComponent
   ],
   imports: [
     PagesModule,
     BrowserModule,
     APP_ROUTES,
+    ServiceModule,
     FormsModule
   ],
   providers: [],
