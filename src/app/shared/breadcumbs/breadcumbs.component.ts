@@ -17,7 +17,7 @@ export class BreadcumbsComponent implements OnInit {
   constructor(private router: Router, private title: Title, private meta: Meta) { 
     
     this.getDataRoute().subscribe( (event: ActivationEnd ) =>{
-      console.log(event)
+      //console.log(event)
       this.nombrePage = event;
       this.title.setTitle(this.nombrePage)
       let metaTag: MetaDefinition = {
